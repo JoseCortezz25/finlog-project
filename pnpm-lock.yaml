@@ -193,8 +193,8 @@ importers:
         specifier: ^6.0.3
         version: 6.0.3
       ultracite:
-        specifier: ^7.7.0
-        version: 7.8.0
+        specifier: ^7.8.2
+        version: 7.8.2
       vite:
         specifier: ^8.0.14
         version: 8.0.14(@types/node@25.9.1)(esbuild@0.28.0)(jiti@2.7.0)(terser@5.48.0)(tsx@4.22.3)(yaml@2.9.0)
@@ -416,12 +416,12 @@ packages:
     resolution: {integrity: sha512-ctxtJ/eA+t+6q2++vj5j7FYX3nRu311q1wfYH3xjlLOsczhlhxAg2FWNUXhpGvAw3BWo1xBcvOV6/YLc2r5FJw==}
     hasBin: true
 
-  '@clack/core@1.4.0':
-    resolution: {integrity: sha512-7Wctjq6f7c1CPz8sPpkwUnz8yRgVANkpNupb81q432FjcJg4l+Sw7XANdNSdWfAKq0IHI0JTcUeK5dxs/HrGPw==}
+  '@clack/core@1.4.1':
+    resolution: {integrity: sha512-FILJa1gGKEFTGZAJE9RpVhrjKz3c3h4ar60dSv6cGuDqufQ84YEIS3GAGvZiN+H6yaLbbvTFNejjCC4tXpZEuw==}
     engines: {node: '>= 20.12.0'}
 
-  '@clack/prompts@1.5.0':
-    resolution: {integrity: sha512-wKh+wTjmrUoUdkZg8KpJO5X+p9PWV+KE9mePseq9UYWkukgTKsGS47RRL2HstwVcvDQH+PenrPJWII8+MfiiyA==}
+  '@clack/prompts@1.5.1':
+    resolution: {integrity: sha512-zccHj2z2oCCO4yrDiRSlFOxWerGqRiysP7a5jPK6uoI9URKAquwY42Dd/iUP8JWHxEzdRe4TlbvZCo8z1/mhrw==}
     engines: {node: '>= 20.12.0'}
 
   '@csstools/color-helpers@6.0.2':
@@ -2707,6 +2707,10 @@ packages:
     resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
     engines: {node: '>=20'}
 
+  commander@15.0.0:
+    resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
+    engines: {node: '>=22.12.0'}
+
   commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
 
@@ -4980,6 +4984,10 @@ packages:
     resolution: {integrity: sha512-g62dB+w1/OEFnPvmX0yd/HnetYITOL+1nJW7kitOycOeAvmbWC/nu0fwmmQ/kupNojqExzyC/T++pST/jRJ2mQ==}
     engines: {node: '>=18'}
 
+  tinyexec@1.2.4:
+    resolution: {integrity: sha512-SHf/r48b7vOrjve9PxJo3MN5v5yuyjHvdUcrQffT3WXMUfnGmHDVbC4k3sHJaJTgZCwpUplIaAo5ANtMyp3YHg==}
+    engines: {node: '>=18'}
+
   tinyglobby@0.2.17:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
@@ -5080,8 +5088,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  ultracite@7.8.0:
-    resolution: {integrity: sha512-wAIdn7YTBjygSdpz3ubMCAqja0odk2SCn/YqrM6k17D7ASouo0qaODJa76Xo3tp13yPWnNnLvcduNlmLBAtzYg==}
+  ultracite@7.8.2:
+    resolution: {integrity: sha512-+XeWzAEsewEr/kM686bOIWWt5DN+Pww4JUEOQUqOx4p/Pi58FWV+vPtEo2wi5WVWSgIkf8NzfTWGXmJjdqMl8g==}
     hasBin: true
     peerDependencies:
       oxfmt: '>=0.1.0'
@@ -5697,14 +5705,14 @@ snapshots:
     dependencies:
       css-tree: 3.2.1
 
-  '@clack/core@1.4.0':
+  '@clack/core@1.4.1':
     dependencies:
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
 
-  '@clack/prompts@1.5.0':
+  '@clack/prompts@1.5.1':
     dependencies:
-      '@clack/core': 1.4.0
+      '@clack/core': 1.4.1
       fast-string-width: 3.0.2
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
@@ -8334,6 +8342,8 @@ snapshots:
 
   commander@14.0.3: {}
 
+  commander@15.0.0: {}
+
   commander@2.20.3: {}
 
   commander@5.1.0: {}
@@ -9746,7 +9756,7 @@ snapshots:
     dependencies:
       citty: 0.2.2
       pathe: 2.0.3
-      tinyexec: 1.2.3
+      tinyexec: 1.2.4
 
   object-assign@4.1.1: {}
 
@@ -10669,6 +10679,8 @@ snapshots:
 
   tinyexec@1.2.3: {}
 
+  tinyexec@1.2.4: {}
+
   tinyglobby@0.2.17:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.4)
@@ -10760,10 +10772,10 @@ snapshots:
 
   typescript@6.0.3: {}
 
-  ultracite@7.8.0:
+  ultracite@7.8.2:
     dependencies:
-      '@clack/prompts': 1.5.0
-      commander: 14.0.3
+      '@clack/prompts': 1.5.1
+      commander: 15.0.0
       cross-spawn: 7.0.6
       deepmerge: 4.3.1
       glob: 13.0.6
