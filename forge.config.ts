@@ -11,6 +11,7 @@ const config: ForgeConfig = {
   packagerConfig: {
     asar: {
       unpack: "*.{node,dll}",
+      unpackDir: "**/node_modules/better-sqlite3",
     },
   },
   rebuildConfig: {},
