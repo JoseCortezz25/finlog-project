@@ -10,8 +10,8 @@ import type { ForgeConfig } from "@electron-forge/shared-types";
 const config: ForgeConfig = {
   packagerConfig: {
     asar: {
-      unpack: "*.{node,dll}",
-      unpackDir: "**/node_modules/better-sqlite3",
+      unpack: "**/*.{node,dll}",
+      unpackDir: "{node_modules/better-sqlite3,node_modules/better-sqlite3/**}",
     },
   },
   rebuildConfig: {},
