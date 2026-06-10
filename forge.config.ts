@@ -9,7 +9,7 @@ import type { ForgeConfig } from "@electron-forge/shared-types";
 
 const config: ForgeConfig = {
   packagerConfig: {
-    asar: false,
+    asar: true,
   },
   rebuildConfig: {},
   makers: [
